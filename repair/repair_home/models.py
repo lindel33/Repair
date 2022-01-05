@@ -8,9 +8,6 @@ class CPU(models.Model):
     type_connect = models.BooleanField('Интегрированный?')
     graphics_cpu = models.CharField('Графический процессор', max_length=130)
 
-    def __str__(self):
-        return self.cpu
-
 
 class RAM(models.Model):
     name_ram = models.CharField('Производитель', max_length=50)
@@ -31,6 +28,10 @@ class Memory(models.Model):
 
 class NoteBook(models.Model):
     name_company = models.CharField('Производитель', max_length=20, unique=True)
+    image_1 = models.ImageField('Фото 1', upload_to='media',
+                                unique=True, default='test.jpg')
+    image_2 = models.ImageField('Фото 1', upload_to='media',
+                                unique=True, default='test.jpg')
     series = models.CharField('Серия/Номер модели', max_length=255, unique=True)
     diagonal = models.FloatField('Диагональ экрана', max_length=60)
     size_screen = models.CharField('Разрешение экрана', max_length=20)
@@ -39,6 +40,7 @@ class NoteBook(models.Model):
     key_cpu = models.ForeignKey(CPU, on_delete=models.PROTECT)
     key_ram = models.ForeignKey(RAM, on_delete=models.PROTECT)
     key_memory = models.ForeignKey(Memory, on_delete=models.PROTECT)
+    availability = models.BooleanField('Наличие', default=False)
 
     def __int__(self):
         return self.id

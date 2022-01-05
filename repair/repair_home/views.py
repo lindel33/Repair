@@ -16,4 +16,5 @@ class Detail(DetailView):
     queryset = NoteBook.objects.all()
     template_name = 'main/Detail.html'
     context_object_name = 'products'
+
     pk_url_kwarg = 'pk'
