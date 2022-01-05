@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}Главная{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
 </head>
+<header>
+    <nav class="one">
+  <ul>
+    <li><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</header>
 <body>
 
+{% block content %}
+
+<div class="products">
+
+    <div class="product-item">
+          <img src="media/test.jpg">
+          <div class="product-list">
+                    <h3> product number шт</h3>
+              <span class="price">100 руб.</span>
+                    <span class="price" style="text-decoration: underline;">
+                        Скидка 0 руб.
+                    </span>
+          <a href="" class="button">В корзину</a>
+      </div>
+    </div>
+     <div class="product-item">
+          <img src="media/test.jpg">
+          <div class="product-list">
+                    <h3> product number шт</h3>
+              <span class="price">100 руб.</span>
+                    <span class="price" style="text-decoration: underline;">
+                        Скидка 0 руб.
+                    </span>
+          <a href="" class="button">В корзину</a>
+      </div>
+    </div>
+     <div class="product-item">
+          <img src="media/test.jpg">
+          <div class="product-list">
+                    <h3> product number шт</h3>
+              <span class="price">100 руб.</span>
+                    <span class="price" style="text-decoration: underline;">
+                        Скидка 0 руб.
+                    </span>
+          <a href="" class="button">В корзину</a>
+      </div>
+    </div>
+ <div class="product-item">
+          <img src="media/test.jpg">
+          <div class="product-list">
+                    <h3> product number шт</h3>
+              <span class="price">100 руб.</span>
+                    <span class="price" style="text-decoration: underline;">
+                        Скидка 0 руб.
+                    </span>
+          <a href="" class="button">В корзину</a>
+      </div>
+    </div>
+ <div class="product-item">
+          <img src="media/test.jpg">
+          <div class="product-list">
+                    <h3> product number шт</h3>
+              <span class="price">100 руб.</span>
+                    <span class="price" style="text-decoration: underline;">
+                        Скидка 0 руб.
+                    </span>
+          <a href="" class="button">В корзину</a>
+      </div>
+    </div>
+
+
+
+</div>
+{% endblock %}
 </body>
+
 </html>
