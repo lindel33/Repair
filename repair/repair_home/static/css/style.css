@@ -102,6 +102,12 @@ nav {
    display: block;
    margin-bottom: 12px;
 }
+.name_company {
+   font-size: 20px;
+   color: #000;
+   display: block;
+   margin-bottom: 16px;
+}
 .button {
    text-decoration: none;
    display: inline-block;

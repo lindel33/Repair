@@ -5,7 +5,7 @@ from django.urls import path, include
 from .views import index, Home, Detail
 
 urlpatterns = [
-    path('', index),
+    path('', Home.as_view()),
     # path('delivery', )
     # path('products', products)
     path('about_us', Home.as_view()),

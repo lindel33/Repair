@@ -20,68 +20,22 @@
 <body>
 
 {% block content %}
-
 <div class="products">
-
+{% for el in products %}
     <div class="product-item">
-          <img src="media/test.jpg">
+          <img src="{{ el.image_1.url }}">
           <div class="product-list">
-                    <h3> product number шт</h3>
-              <span class="price">100 руб.</span>
-                    <span class="price" style="text-decoration: underline;">
-                        Скидка 0 руб.
-                    </span>
-          <a href="" class="button">В корзину</a>
-      </div>
-    </div>
-     <div class="product-item">
-          <img src="media/test.jpg">
-          <div class="product-list">
-                    <h3> product number шт</h3>
-              <span class="price">100 руб.</span>
-                    <span class="price" style="text-decoration: underline;">
-                        Скидка 0 руб.
-                    </span>
-          <a href="" class="button">В корзину</a>
-      </div>
-    </div>
-     <div class="product-item">
-          <img src="media/test.jpg">
-          <div class="product-list">
-                    <h3> product number шт</h3>
-              <span class="price">100 руб.</span>
-                    <span class="price" style="text-decoration: underline;">
-                        Скидка 0 руб.
-                    </span>
-          <a href="" class="button">В корзину</a>
-      </div>
-    </div>
- <div class="product-item">
-          <img src="media/test.jpg">
-          <div class="product-list">
-                    <h3> product number шт</h3>
-              <span class="price">100 руб.</span>
-                    <span class="price" style="text-decoration: underline;">
-                        Скидка 0 руб.
-                    </span>
-          <a href="" class="button">В корзину</a>
-      </div>
-    </div>
- <div class="product-item">
-          <img src="media/test.jpg">
-          <div class="product-list">
-                    <h3> product number шт</h3>
-              <span class="price">100 руб.</span>
-                    <span class="price" style="text-decoration: underline;">
-                        Скидка 0 руб.
-                    </span>
-          <a href="" class="button">В корзину</a>
-      </div>
-    </div>
+                <span class="name_company">
+                        {{ el.name_company}}
+                </span>
+                <span class="price">Цена: {{ el.price }}р</span>
 
-
-
+          <a href="detail/{{ el.id }}" class="button">В корзину</a>
+      </div>
+    </div>
+{% endfor %}
 </div>
+
 {% endblock %}
 </body>
 
