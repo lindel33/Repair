@@ -4,4 +4,9 @@
 
 <h1>{{ products.name_company }}</h1>
 <img src="{{products.image_1.url}}" width="250" height="200">
+<form action="{% url 'cart:cart_add' products.id %}" method="post">
+        {{ cart_product_form }}
+        {% csrf_token %}
+        <input type="submit" value="В корзину">
+</form>
 {% endblock %}
