@@ -1,12 +1,24 @@
 from django.db import models
 
 
+class Category(models.Model):
+    category = models.CharField('Категория', max_length=30)
+
+    class Meta:
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
+
+    def __str__(self):
+        return self.category
+
+
 class CPU(models.Model):
     cpu = models.CharField('Процессор', max_length=100)
     cpu_core = models.SmallIntegerField('Кол-во ядер')
     frequency = models.FloatField('Частота', max_length=60)
     graphics_cpu = models.CharField('Графический процессор', max_length=130)
     cpu_socket = models.CharField('Сокет', max_length=20)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'Процессор'
@@ -21,6 +33,7 @@ class RAM(models.Model):
     memory_ram = models.SmallIntegerField('Объем установленный ГБ')
     type_socket = models.CharField('Тип DDR', max_length=5)
     frequency = models.FloatField('Частота', max_length=60)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'ОЗУ'
@@ -36,6 +49,7 @@ class Memory(models.Model):
     hard_disk = models.BooleanField('HardDisk')
     memory_ssd = models.SmallIntegerField('Объем ssd ГБ')
     memory_hard = models.SmallIntegerField('Объем жесткого диска ГБ')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'Память'
@@ -48,6 +62,7 @@ class Memory(models.Model):
 class VideoCart(models.Model):
     name = models.CharField('Название', max_length=200)
     memory = models.SmallIntegerField('Память ГБ')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -60,6 +75,7 @@ class VideoCart(models.Model):
 class Motherboard(models.Model):
     name = models.CharField('Название', max_length=200)
     number_slots_ram = models.SmallIntegerField('Кол-во слотов для ОЗУ')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -103,6 +119,7 @@ class NoteBook(models.Model):
     bluetooth_5 = models.BooleanField('Bluetooth 5')
     bluetooth_4 = models.BooleanField('Bluetooth 4')
     headphone = models.CharField('Наушники', max_length=255)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     price = models.FloatField()
 
@@ -112,3 +129,20 @@ class NoteBook(models.Model):
 
     def __str__(self):
         return self.name_company
+
+
+# class CategorySearch(models.Model):
+#     category = models.CharField('Категория', max_length=200)
+#     ram = models.ForeignKey(RAM, on_delete=models.CASCADE)
+#     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
+#     memory = models.ForeignKey(Memory, on_delete=models.CASCADE)
+#     video_cart = models.ForeignKey(VideoCart, on_delete=models.CASCADE)
+#     mother_board = models.ForeignKey(Motherboard, on_delete=models.CASCADE)
+#     note_book = models.ForeignKey(NoteBook, on_delete=models.CASCADE)
+#
+#     class Meta:
+#         verbose_name = 'Поиск категории'
+#         verbose_name_plural = 'Поиск категорий'
+#
+#     def __str__(self):
+#         return self.category

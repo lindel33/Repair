@@ -2,5 +2,7 @@
 {% block title %} home{% endblock %}
 
 {% block content %}
-
+{% for el in products %}
+{{ el.name_company }}<br>
+{% endfor %}
 {% endblock %}
