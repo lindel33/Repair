@@ -21,8 +21,9 @@
 
 {% block content %}
 {% for category in categories %}
-<ul><li><a href="category/{{ category.id }}/info">{{ category }}</a></li></ul><br>
+<ul><li><a href="/category/{{ category.id }}/info">{{ category }}</a></li></ul><br>
 {% endfor %}
+
 <div class="products">
 {% for el in products %}
     <div class="product-item">
@@ -33,7 +34,7 @@
                 </span>
                 <span class="price">Цена: {{ el.price }}р</span>
 
-          <a href="detail/{{ el.id }}" class="button">Подробнее</a>
+          <a href="/detail/{{ el.id }}" class="button">Подробнее</a>
       </div>
     </div>
 {% endfor %}

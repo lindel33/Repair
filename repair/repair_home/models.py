@@ -1,4 +1,7 @@
 from django.db import models
+wifi_choices = {
+    ('PL', 'wifi есть')
+}
 
 
 class Category(models.Model):
@@ -10,6 +13,17 @@ class Category(models.Model):
 
     def __str__(self):
         return self.category
+
+
+class ModelNoteBook(models.Model):
+    model_notebook = models.CharField('Модель ноутбука(Категории сайт)', max_length=200)
+
+    class Meta:
+        verbose_name = 'Категория сайта'
+        verbose_name_plural = 'Категории сайта'
+
+    def __str__(self):
+        return self.model_notebook
 
 
 class CPU(models.Model):
@@ -44,11 +58,13 @@ class RAM(models.Model):
 
 
 class Memory(models.Model):
-    name = models.CharField('Название', max_length=40)
+    # TO DO Сделать имя для SSD или HARD
     ssd = models.BooleanField('ssd')
     hard_disk = models.BooleanField('HardDisk')
     memory_ssd = models.SmallIntegerField('Объем ssd ГБ')
     memory_hard = models.SmallIntegerField('Объем жесткого диска ГБ')
+    name_ssd = models.CharField('Название ssd', max_length=40)
+    name_hard = models.CharField('Название hard', max_length=40)
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
@@ -56,7 +72,7 @@ class Memory(models.Model):
         verbose_name_plural = 'Память'
 
     def __str__(self):
-        return self.name
+        return self.name_ssd
 
 
 class VideoCart(models.Model):
@@ -86,10 +102,11 @@ class Motherboard(models.Model):
 
 
 class NoteBook(models.Model):
+
     name_company = models.CharField('Производитель', max_length=20, unique=True)
     image_1 = models.ImageField('Фото 1', upload_to='media',
                                 default='test.jpg')
-    image_2 = models.ImageField('Фото 1', upload_to='media',
+    image_2 = models.ImageField('Фото 2', upload_to='media',
                                 default='test.jpg')
 
     series = models.CharField('Серия/Номер модели', max_length=255, unique=True)
@@ -97,6 +114,7 @@ class NoteBook(models.Model):
     size_screen = models.CharField('Разрешение экрана', max_length=20)
     type_matrix = models.CharField('Тип матрицы экрана', max_length=30)
     surface_screen = models.CharField('Поверхность экрана', max_length=30)
+    wifi = models.CharField('wifi', choices=wifi_choices, max_length=20)
 
     key_cpu = models.ForeignKey(CPU, on_delete=models.PROTECT)
     type_connect_cpu = models.BooleanField('Интегрированный?')
@@ -111,6 +129,8 @@ class NoteBook(models.Model):
     type_connect_video = models.BooleanField('Интергрированная?')
 
     key_motherboard = models.ForeignKey(Motherboard, on_delete=models.PROTECT)
+
+    category_site = models.ForeignKey(ModelNoteBook, on_delete=models.PROTECT)
 
     availability = models.BooleanField('Наличие', default=False)
     usb_ports = models.SmallIntegerField('USB портов')
@@ -129,20 +149,3 @@ class NoteBook(models.Model):
 
     def __str__(self):
         return self.name_company
-
-
-# class CategorySearch(models.Model):
-#     category = models.CharField('Категория', max_length=200)
-#     ram = models.ForeignKey(RAM, on_delete=models.CASCADE)
-#     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
-#     memory = models.ForeignKey(Memory, on_delete=models.CASCADE)
-#     video_cart = models.ForeignKey(VideoCart, on_delete=models.CASCADE)
-#     mother_board = models.ForeignKey(Motherboard, on_delete=models.CASCADE)
-#     note_book = models.ForeignKey(NoteBook, on_delete=models.CASCADE)
-#
-#     class Meta:
-#         verbose_name = 'Поиск категории'
-#         verbose_name_plural = 'Поиск категорий'
-#
-#     def __str__(self):
-#         return self.category

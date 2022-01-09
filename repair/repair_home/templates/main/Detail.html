@@ -2,8 +2,199 @@
 {% block title %} Детали {% endblock %}
 {% block content %}
 
-<h1>{{ products.name_company }}</h1>
-<img src="{{products.image_1.url}}" width="250" height="200">
+
+
+
+<div class="description-product">
+        <h1>{{ products.name_company }}</h1>
+        <img src="{{products.image_1.url}}" width="250" height="200">
+        <img src="{{products.image_2.url}}" width="250" height="200">
+
+        <div class="character-notebook">
+
+                <div class="notebook">
+                    <h3>Ноутбук</h3>
+                        <br>
+                        <table>
+                            <tr>
+                            <td>Диагональ:</td>
+                                  <td>{{ products.diagonal }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Разрешение:</td>
+                                  <td> {{ products.size_screen }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Матрица:</td>
+                                  <td>{{ products.type_matrix }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Покрытие: </td>
+                                  <td>{{ products.surface_screen }}</td>
+                          </tr>
+                          <tr>
+
+                            <td><br>USB порты:</td>
+                                  <td><br>{{ products.usb_ports }}</td>
+
+                          </tr>
+                            {% if products.lan %}
+                          <tr>
+                            <td>Lan порт:</td>
+                                  <td> Есть </td>
+
+                          </tr>
+                            {% endif %}
+                            {% if products.lan %}
+                          <tr>
+                            <td>Поддержка bluetooth 5:</td>
+                                  <td>Есть</td>
+
+                          </tr>
+                            {% endif %}
+                          <tr>
+                            <td>Наушники: </td>
+                                  <td>{{ products.headphone }}</td>
+                          </tr>
+
+                        </table>
+                        <br>
+                </div>
+                <div class="CPU">
+                        <h3>Процессор</h3>
+                        <br>
+                        <table>
+                          <tr>
+                            <td>Ядра:</td>
+                                  <td>{{ products.key_cpu.cpu_core }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Частота:</td>
+                                  <td> {{ products.key_cpu.frequency }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Графический процессор:</td>
+                                  <td>{{ products.key_cpu.graphics_cpu }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Сокет: </td>
+                                  <td>{{ products.key_cpu.cpu_socket }}</td>
+                          </tr>
+
+                        </table>
+                        <br>
+                </div>
+
+                <div class="RAM">
+                                <h3>Опертивная память</h3>
+                        <br>
+                        <table>
+                          <tr>
+                            <td>Производитель:</td>
+                                  <td>{{ products.key_ram.name_ram }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Объем:</td>
+                                  <td> {{ products.key_ram.memory_ram }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Сокет</td>
+                                  <td>{{ products.key_ram.type_socket }}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Частота: </td>
+                                  <td>{{ products.key_ram.frequency }}</td>
+                            </tr>
+                        </table>
+                        <br>
+                </div>
+
+                <div class="memory">
+                                <h3>Накопитель</h3>
+                        <br>
+                        <table>
+                          {% if products.key_memory.ssd%}
+                          <tr>
+                            <td>ssd:</td>
+                                  <td>{{ products.key_memory.name_ssd }}</td>
+
+                          </tr>
+
+                          <tr>
+                            <td>Объем:</td>
+                                  <td> {{ products.key_memory.memory_ssd }}</td>
+
+                          </tr>
+                          {% endif %}
+
+                            {% if products.key_memory.hard_disk %}
+                          <tr>
+                            <td>ssd:</td>
+                                  <td>{{ products.key_memory.name_hard }}</td>
+
+                          </tr>
+
+                          <tr>
+                            <td>Объем:</td>
+                                  <td> {{ products.key_memory.memory_hard }}</td>
+
+                          </tr>
+                          {% endif %}
+
+
+                        </table>
+                        <br>
+                </div>
+
+                <div class="VideoCart">
+                            <h3>Видеокарта</h3>
+                            <br>
+                            <table>
+                              <tr>
+                                <td>Производитель:</td>
+                                      <td>{{ products.key_video_cart.name }}</td>
+
+                              </tr>
+                              <tr>
+                                <td>Частота:</td>
+                                      <td> {{ products.key_video_cart.memory }}</td>
+
+                            </table>
+                            <br>
+                    </div>
+
+                    <div class="key_motherboard">
+                            <h3>Матеоинская Плата</h3>
+                            <br>
+                            <table>
+                              <tr>
+                                <td>Производитель:</td>
+                                      <td>{{ products.key_motherboard.name }}</td>
+
+                              </tr>
+                              <tr>
+                                <td>Слотов под ОЗУ:</td>
+                                      <td> {{ products.key_motherboard.number_slots_ram }}</td>
+                              </tr>
+                            </table>
+                            <br>
+                    </div>
+
+        </div>
+
+
+        <h1>Цена: {{ products.price }}</h1>
+</div>
+
 <form action="{% url 'cart:cart_add' products.id %}" method="post">
         {{ cart_product_form }}
         {% csrf_token %}
