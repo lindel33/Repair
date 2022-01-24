@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="246b87ba-7d09-41fd-ac87-1bba69dd59ba" name="Changes" comment="Create model ModelNoteBook for search model notebook">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Repair.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mypy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create/db_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create/global_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create/new_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/cart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/templates/main/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/cart/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/templates/main/check_notebooks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/templates/main/notebook_search_ok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/check_notebook/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/back_ID49vXZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/back_iqu6dAa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/intro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/intro_fEg5gFh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/intro_fEg5gFh_h3gx5Js.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/media/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/media/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0002_category_cpu_category_memory_category_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0003_categorysearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0004_categorysearch_cpu_categorysearch_memory_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0005_delete_categorysearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0006_remove_memory_name_memory_name_hard_memory_name_ssd_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0007_modelnotebook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0008_notebook_category_site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0009_infotmp_alter_notebook_image_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/Detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repair/repair_home/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="22vkq1Qe1Na1o0W9AFXhRo0Om8i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjectInstAlanitic" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luky\PycharmProjects\Repair\create" />
+      <recent name="C:\Users\luky\PycharmProjects\Repair\repair\media" />
+      <recent name="C:\Users\luky\PycharmProjects\Repair\repair" />
+      <recent name="C:\Users\luky\PycharmProjects\Repair\repair\cart" />
+      <recent name="C:\Users\luky\PycharmProjects\Repair" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.db_data">
+    <configuration name="db_data" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Repair" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\luky\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/create" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create/db_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Repair" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\luky\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/create" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.db_data" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="246b87ba-7d09-41fd-ac87-1bba69dd59ba" name="Changes" comment="" />
+      <created>1640725636086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640725636086</updated>
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1640726342488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640726342488</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1641377247106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641377247106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1641377277638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641377277638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="New code">
+      <created>1641391997698</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641391997698</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New code">
+      <created>1641395321123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641395321123</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New code">
+      <created>1641500281478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641500281478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Чистка">
+      <created>1641500554054</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641500554054</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init app Cart">
+      <created>1641502715411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641502715411</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cart is ready">
+      <created>1641569742894</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641569742894</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Create model ModelNoteBook for search model notebook on site">
+      <created>1641752550275</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641752550275</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Create model ModelNoteBook for search model notebook">
+      <created>1643045313931</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643045313931</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="New code" />
+    <MESSAGE value="Чистка" />
+    <MESSAGE value="init app Cart" />
+    <MESSAGE value="Cart is ready" />
+    <MESSAGE value="Create model ModelNoteBook for search model notebook on site" />
+    <MESSAGE value="Create model ModelNoteBook for search model notebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create model ModelNoteBook for search model notebook" />
+  </component>
+</project>
