@@ -1,4 +1,29 @@
 from django.db import models
+wifi_choices = {
+    ('PL', 'wifi есть')
+}
+
+
+class Category(models.Model):
+    category = models.CharField('Категория', max_length=30)
+
+    class Meta:
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
+
+    def __str__(self):
+        return self.category
+
+
+class ModelNoteBook(models.Model):
+    model_notebook = models.CharField('Модель ноутбука(Категории сайт)', max_length=200)
+
+    class Meta:
+        verbose_name = 'Категория сайта'
+        verbose_name_plural = 'Категории сайта'
+
+    def __str__(self):
+        return self.model_notebook
 
 
 class CPU(models.Model):
@@ -7,6 +32,7 @@ class CPU(models.Model):
     frequency = models.FloatField('Частота', max_length=60)
     graphics_cpu = models.CharField('Графический процессор', max_length=130)
     cpu_socket = models.CharField('Сокет', max_length=20)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'Процессор'
@@ -21,6 +47,7 @@ class RAM(models.Model):
     memory_ram = models.SmallIntegerField('Объем установленный ГБ')
     type_socket = models.CharField('Тип DDR', max_length=5)
     frequency = models.FloatField('Частота', max_length=60)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'ОЗУ'
@@ -31,23 +58,27 @@ class RAM(models.Model):
 
 
 class Memory(models.Model):
-    name = models.CharField('Название', max_length=40)
+    # TO DO Сделать имя для SSD или HARD
     ssd = models.BooleanField('ssd')
     hard_disk = models.BooleanField('HardDisk')
     memory_ssd = models.SmallIntegerField('Объем ssd ГБ')
     memory_hard = models.SmallIntegerField('Объем жесткого диска ГБ')
+    name_ssd = models.CharField('Название ssd', max_length=40)
+    name_hard = models.CharField('Название hard', max_length=40)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     class Meta:
         verbose_name = 'Память'
         verbose_name_plural = 'Память'
 
     def __str__(self):
-        return self.name
+        return self.name_ssd
 
 
 class VideoCart(models.Model):
     name = models.CharField('Название', max_length=200)
     memory = models.SmallIntegerField('Память ГБ')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -60,6 +91,7 @@ class VideoCart(models.Model):
 class Motherboard(models.Model):
     name = models.CharField('Название', max_length=200)
     number_slots_ram = models.SmallIntegerField('Кол-во слотов для ОЗУ')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -70,10 +102,11 @@ class Motherboard(models.Model):
 
 
 class NoteBook(models.Model):
+
     name_company = models.CharField('Производитель', max_length=20, unique=True)
     image_1 = models.ImageField('Фото 1', upload_to='media',
                                 default='test.jpg')
-    image_2 = models.ImageField('Фото 1', upload_to='media',
+    image_2 = models.ImageField('Фото 2', upload_to='media',
                                 default='test.jpg')
 
     series = models.CharField('Серия/Номер модели', max_length=255, unique=True)
@@ -81,6 +114,7 @@ class NoteBook(models.Model):
     size_screen = models.CharField('Разрешение экрана', max_length=20)
     type_matrix = models.CharField('Тип матрицы экрана', max_length=30)
     surface_screen = models.CharField('Поверхность экрана', max_length=30)
+    wifi = models.CharField('wifi', choices=wifi_choices, max_length=20)
 
     key_cpu = models.ForeignKey(CPU, on_delete=models.PROTECT)
     type_connect_cpu = models.BooleanField('Интегрированный?')
@@ -96,6 +130,8 @@ class NoteBook(models.Model):
 
     key_motherboard = models.ForeignKey(Motherboard, on_delete=models.PROTECT)
 
+    category_site = models.ForeignKey(ModelNoteBook, on_delete=models.PROTECT)
+
     availability = models.BooleanField('Наличие', default=False)
     usb_ports = models.SmallIntegerField('USB портов')
     hdmi_port = models.BooleanField('HDMI')
@@ -103,6 +139,7 @@ class NoteBook(models.Model):
     bluetooth_5 = models.BooleanField('Bluetooth 5')
     bluetooth_4 = models.BooleanField('Bluetooth 4')
     headphone = models.CharField('Наушники', max_length=255)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
 
     price = models.FloatField()
 

@@ -74,7 +74,3 @@ class Cart(object):
         # очищаем корзину в сессии
         del self.session[settings.CART_SESSION_ID]
         self.save()
-
-    def dict_cart(self):
-        busket = self.cart
-        return busket
