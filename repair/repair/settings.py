@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'repair_home',
     'cart',
+    'check_notebook',
 ]
 
 MIDDLEWARE = [
@@ -107,7 +108,7 @@ LOGIN_URL = '/'
 LOGOUT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-
+APPEND_SLASH = True
 CART_SESSION_ID = 'cart'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

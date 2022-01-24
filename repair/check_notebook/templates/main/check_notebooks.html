@@ -1,0 +1,13 @@
+{% extends 'main/index.html'%}
+{% block title %} Проверка {% endblock %}
+
+{% block content %}
+<div class="checkbox">
+    Проверка через форму запроса
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+</div>
+{% endblock %}

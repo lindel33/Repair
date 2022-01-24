@@ -149,3 +149,17 @@ class NoteBook(models.Model):
 
     def __str__(self):
         return self.name_company
+
+
+class InfoTmp(models.Model):
+
+    name = models.CharField('Марка', max_length=25)
+    number_series = models.CharField('Модель\Серия', max_length=40)
+    text = models.TextField('Описание', max_length=10_000)
+
+    class Meta:
+        verbose_name = 'Ноутбук'
+        verbose_name_plural = 'Ноутбуки'
+
+    def __str__(self):
+        return self.name

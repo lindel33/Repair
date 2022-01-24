@@ -4,92 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="246b87ba-7d09-41fd-ac87-1bba69dd59ba" name="Changes" comment="Create model ModelNoteBook for search model notebook">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Repair.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mypy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create/db_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create/global_set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create/new_db.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/cart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/templates/main/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/cart/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/templates/main/check_notebooks.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/templates/main/notebook_search_ok.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/check_notebook/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/back_ID49vXZ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/back_iqu6dAa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/intro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/intro_fEg5gFh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/intro_fEg5gFh_h3gx5Js.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/media/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/media/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0002_category_cpu_category_memory_category_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0003_categorysearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0004_categorysearch_cpu_categorysearch_memory_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0005_delete_categorysearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0006_remove_memory_name_memory_name_hard_memory_name_ssd_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0007_modelnotebook.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0008_notebook_category_site.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/0009_infotmp_alter_notebook_image_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/Detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/templates/main/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repair/repair_home/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="246b87ba-7d09-41fd-ac87-1bba69dd59ba" name="Changes" comment="Create model ModelNoteBook for search model notebook" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,8 +95,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.db_data" />
+      <item itemvalue="Python.main" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
