@@ -1,4 +1,4 @@
-# Django 3.0.8
+# Django 4.0.1
 
 import os
 
