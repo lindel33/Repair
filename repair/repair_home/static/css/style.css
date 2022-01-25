@@ -122,3 +122,12 @@ nav {
 .product-item:hover .button {
    background: #f5d5d5;
 }
+div.category-links, div.product { float: left; }
+
+.category-links p{
+    display: flex;
+    color: #fff;
+    outline: 1px solid #fa8484;
+    font-size: 150%;
+
+}

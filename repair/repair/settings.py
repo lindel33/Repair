@@ -1,5 +1,5 @@
 # Django 4.0.1
-
+import django_heroku
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,3 +119,4 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'berryShop_cache')
     }
 }
+django_heroku.settings(locals())
