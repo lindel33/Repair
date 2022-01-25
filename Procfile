@@ -1,1 +1,0 @@
-web: gunicorn repair.repair.wsgi --log-file -
