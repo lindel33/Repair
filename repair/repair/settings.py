@@ -22,9 +22,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
-    'repair_home',
-    'cart',
-    'check_notebook',
+    'repair.repair_home',
+    'repair.cart',
+    'repair.check_notebook',
 ]
 
 MIDDLEWARE = [
@@ -39,7 +39,7 @@ MIDDLEWARE = [
 
 ]
 
-ROOT_URLCONF = 'repair.urls'
+ROOT_URLCONF = 'repair.repair.urls'
 
 TEMPLATES = [
     {
@@ -57,7 +57,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'repair.wsgi.application'
+WSGI_APPLICATION = 'repair.repair.wsgi.application'
 
 
 DATABASES = {
